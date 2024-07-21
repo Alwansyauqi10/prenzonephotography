@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  /* COLOR */
+  --button: #a7ba9c;
+  --background-object: #93a689;
+  --hitam: #151515;
+  --background-abu: #757575;
+  --background-putih: #f8f8f7;
+}
+
+/* BASE STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+  box-shadow: 3px 3px 3px 3px rgba(1, 1, 1, 0.2);
+  position: sticky;
+  top: -5px;
+  z-index: 2;
+  height: 70px;
+  min-height: 70px;
+}
+
+.nav-link:hover {
+  color: var(--button);
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.collapse {
+  gap: 40px;
+}
+
+.btn-booknow {
+  background-color: var(--button);
+  border-radius: 50px;
+  border: none;
+  padding: 6px 12px;
+}
+
+.btn-booknow:hover {
+  color: var(--background-object);
+  background-color: var(--background-object);
+  transition: 0.5s ease-in-out;
+}
+
+.enter-detail {
+  text-align: justify;
+}
+
+/* CARD */
+.card-judul {
+  padding: 5px;
+}
+/* END OF CARD */
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url(img/image-hero/image-hero.JPG);
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-pembungkus {
+  gap: 0px;
+}
+/* .hero-section {
+  background: url("/img/background-landing.jpg");
+  position: static;
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+/* END OF HERO SECTION */
+
+/* ABOUT */
+.about-pembungkus {
+  gap: 70px;
+}
+
+.about-judul {
+  color: var(--button);
+}
+
+.about-text {
+  text-align: justify;
+}
+/* END OF ABOUT */
+
+/* CARD */
+.judul-package {
+  padding: 5px;
+  color: #93a689;
+}
+/* END OF CARD */
+
+/* TESTIMONIAL */
+.clients {
+  color: #93a689;
+}
+
+.card-testi {
+  border-radius: 0.7rem;
+}
+/* END OF TESTIMONI */
+
+/* FOOTER */
+
+.contact-nav a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer-container {
+  background-color: var(--background-object);
+  color: white;
+}
+
+.footer-bawah ul li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+/* END OF FOOTER */
+
+/* ASIDE */
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: var(--background-object);
+  box-shadow: 3px 3px 3px 3px rgba(1, 1, 1, 0.3);
+  /* border: white solid 0.5px; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: var(--button);
+}
+/* END OF ASIDE */
+
+/* Media Screen */
+
+@media only screen and (max-device-width: 575px) {
+  .welcome-prenzone {
+    padding-top: 0px;
+  }
+
+  .about-pembungkus {
+    gap: 25px;
+  }
+
+  .welcome-prenzone {
+    margin-bottom: 8px;
+  }
+
+  .welcome-prenzone h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+  }
+
+  .welcome-prenzone p {
+    text-align: justify;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .enter-detail {
+    text-align: start;
+  }
+
+  .btn-booknow {
+    margin: 0px 35px 0px 35px;
+  }
+
+  .compact-gallery-pembungkus {
+    margin-bottom: 50px;
+  }
+
+  .compact-gallery {
+    padding: 0px 20px 0px 20px;
+  }
+
+  .contact-us {
+    padding: 20px;
+  }
+
+  .subscribe-letter {
+    margin-top: 25px;
+  }
+
+  .list-unstyled {
+    align-self: center;
+  }
+
+  .container-fluid {
+    justify-content: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
